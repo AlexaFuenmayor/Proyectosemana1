@@ -1,0 +1,314 @@
+body {
+  background-color: rgba(0,0,0,0.2);
+  margin: 60px 200px 0px 200px;
+  font-family: 'Kalam', cursive;
+  font-family:'Patrick Hand', cursive;
+  
+
+}
+   
+
+.logo {
+  width: 300px;
+  display: block;
+  margin: auto;
+  
+}
+.loguito {
+     margin-left: 54px;
+
+}
+
+nav{
+  padding: 10px 0 20px 0px;
+  text-align: center;
+  margin-top: 2px;
+  
+  
+}
+
+.barradenavegacion{
+display: inline-flex;
+list-style: none;
+font-size: 20px;
+
+
+/*para evitar cambios en los demas elementos en caso de no tener definidos los margenes:*/
+margin: 0;
+padding: 0;
+
+
+}
+/*selector de clase*/
+.navegacion{
+
+/*dar espacio a todos los elementos*/
+  padding: 10px 60px 10px 60px;
+  color: black;
+  
+}
+/*Selector PseudoClases*/
+.navegacion:hover{
+
+  background-color: tan;
+}
+
+.navegacion a{
+
+  text-decoration: none;
+  color:black;
+  font-weight: 100px;
+
+}
+
+/*parte 1 parallax*/
+
+.parallax{ /*contenedor*/
+  background-image:url(../IMAGENES/parallax.jpeg);
+  /* se utiliza para definir la altura mínima de un elemento dado.
+   Impide que el valor de la propiedad height llegue a ser más pequeña 
+   que la especificada en la altura mínima (min-height)*/
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  /*fondo estatico*/
+  background-attachment: fixed;
+
+
+}
+
+div.tituloparallax h2{
+  font-size: 75px ;
+  color:firebrick;
+  font-weight:700 ;
+  margin: 0 auto ;
+  text-align: center;
+  text-shadow: 4px 3px 2px black;
+  letter-spacing: 6px;
+  
+}
+.parrafoparallax{
+  
+  border: 2px solid white;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color: aqua;
+  
+}
+.parrafoparallax a{
+  color:white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none; /*quitar la rrallita del vinculo*/
+  margin: 0;
+  padding:10px 30px;
+}
+  
+.parrafoparallax a:hover{
+  color: chartreuse;
+  
+}
+  
+.parrafoparallax:hover{
+  background-color: beige;
+  opacity: 0.7;
+
+}
+.informacion{ /*BIO*/
+ display: inline-flex;
+}
+
+.informacion p{
+color: firebrick;
+max-width:50%;
+margin: 0;
+height: auto;
+
+/*alinea los elementos flexibles de la línea flexible actual, 
+reemplazando el valor de align-items. Si el límite transversal de alguno de los elementos 
+está definido como auto, el valor de align-self es ignorado.*/
+align-self: center;
+padding-left: 50px;
+
+
+/*establece la altura de una casilla remarcada por líneas. Comúnmente se usa para establecer la distancia entre líneas de texto. 
+A nivel de elementos de bloque, define la altura mínima de las casillas encuadradas por líneas dentro del elemento. 
+En elementos en linea no reemplazables, especifica la altura que se usa para calcular la altura de la casila encuadrada por líneas.*/
+line-height: 23px ;
+}
+
+.titulohillsong{
+  font-size: 40px ;
+  font-weight: 700 ;
+  color: black;
+  display: inline-flex;
+  padding-top: 1cm;
+
+
+}
+
+.titulohillsong2{
+  font-size: 30px ;
+  font-weight: 500;
+  color: black;
+  display: inline-block;
+  padding-top: 40px;
+
+
+}
+.informacion img{
+  max-width: 80%;
+  height: auto;
+  padding: 0px 50px;
+
+
+}
+
+.contentmusic {
+  font-family:'Patrick Hand', cursive;
+  letter-spacing: 5px;
+  line-height: 2px;
+
+}
+
+.contentmusic h2{
+  margin: 90px 0px;
+  font-size: 1.5cm;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  font-family:'Patrick Hand', cursive;
+}
+
+
+.container {
+  width: 100%;
+  height: 370px;
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 1cm;
+
+}
+
+.container .card {
+  width: 400px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 0 10px;
+  text-align: center;
+  transition: all 0.25s;
+
+
+}
+.container .card img{
+  width: 250px;
+  height: 250px;
+
+}
+
+.container h4{
+  font-weight: 600;
+  color: ;
+
+
+}
+.container .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: firebrick;
+
+
+}
+.container .card a{
+  font-weight: 700;
+  text-decoration: none;
+  color: blue;
+
+} 
+
+.container .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.videos{
+  margin: 50px 0px 0px 0px;
+
+
+}
+
+.imagensection{
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+
+}
+.imagensection img{
+  width: auto;
+  height: 200px;
+  margin-left: 220px;
+  width: 500px;
+  height: auto;
+
+
+}
+.iframemprincipal{
+
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.iframes{
+  display: flex;
+  justify-content: space-around; /*coloca los elementos centrados, o de izquierda a derecha... funciona de manera vertical*/
+  margin-top: 40px;
+  padding: 20px;
+  
+
+
+
+}
+.iframes iframe{
+  padding: 20px;
+
+
+
+}
+.final{
+  margin-top: 100px;
+  background-color:slategrey;
+  min-height: 70px;
+  color: firebrick;
+  padding-top: 10px;
+  border-radius: 70%;
+
+
+}
+
+.final p{
+  text-align: center;
+  font-weight: 400;
+
+
+
+
+}
+  
+
+
+
+
